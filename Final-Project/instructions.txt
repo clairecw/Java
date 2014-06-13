@@ -1,0 +1,103 @@
+INSTRUCTIONS
+=========================
+GAME CREATION MODE
+-------------------
+NEW GAME is the first game mode where 
+you can create your own simple Java
+game. Your game will let the user press 
+keyboard keys to move. The objective of your 
+game is for the user to A. collect all 
+collectible items in the game, or B. get 
+to the door, while avoiding monsters. You 
+can customize your game by:
+
+changing the number of monsters and items,
+
+
+
+changing what keys make the user move in 
+which direction, changing the messages 
+displayed when the user wins and loses,
+toggling between objectives A or B as 
+listed above, and changing the image 
+sprites of the user, monsters, and items.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+Your game can be tested out and played in
+a popout window after pressing "Play". The game 
+can be paused and played with the spacebar.
+
+
+
+
+
+
+
+
+
+
+To the right of the game and options screen,
+a code fragment of how your game would look 
+in Java code will be displayed. As you make 
+adjustments to your customized game, the sample 
+code on the right will be adjusted accordingly. 
+Hover over lines of the code to see what they 
+do or how they work.
+Please note: this is only a portion of 
+a Java program and will not run on its own; 
+it only shows the most important parts
+implementing KeyListeners and Timers.
+
+
+
+
+When you are satisfied with the game you 
+have created, you can save the game to be 
+loaded and played again at a later time.
+
+
+LOAD GAME MODE
+-------------------
+In the second mode of the game, LOAD GAME, 
+you can, evidently, load any games you 
+have previously saved. Simply select the 
+name of the game and press "load".
+
+
+
+
+
+
+CHALLENGE MODE
+-------------------
+In the third mode, Challenge, you can test 
+your Timer and KeyListener capabilities by 
+completing snippets of code according to what 
+each question prompts.
+Type in your answer in the blank and press 
+enter to submit it. A correct answer will add 
+one to three points to your score, while an 
+incorrect one will subtract five seconds from 
+your time left. 
+
+Answering correctly...		earns...
+within 5 seconds		3 points
+between 6 and 15 seconds	2 points
+16 or more seconds		1 point
+
+Answer as many questions correctly as you can
+before 80 seconds is up.
+Your high scores will be saved. Try to beat 
+your old high scores every time!
+
+
+
+knock yourself out :D

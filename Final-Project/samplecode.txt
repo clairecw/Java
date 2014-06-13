@@ -1,0 +1,66 @@
+import java.awt.*;
+import java.awt.event.*;
+
+import javax.swing.*;
+import javax.swing.event.*;
+
+class SampleCode implements KeyListener {
+  Mover mover;
+  Timer timer;
+  int monsternum;
+  int itemnum;
+  int userX, userY;
+  
+  public SampleCode() {
+    mover = new Mover();
+    timer = new Timer(750, mover);
+    
+    monsternum = 3;
+    itemnum = 3;
+  
+    timer.start();
+  }
+
+  class Mover implements ActionListener {
+    public void actionPerformed(ActionEvent e) {
+      for (int i = 0; i < monsternum; i++) {
+        switch ((int)(Math.random() * 4)) {
+          case 1: monsters[i][0]++; break;    
+          case 2: monsters[i][1]++; break;    
+          case 3: monsters[i][0]--; break;    
+          case 4: monsters[i][1]--; break;    
+        }
+          
+        if (monsters[i][0] > 9) monsters[i][0] = 0;    
+        else if (monsters[i][0] < 0) monsters[i][0] = 9;
+          
+        if (monsters[i][1] > 9) monsters[i][1] = 0;
+        else if (monsters[i][1] < 0) monsters[i][1] = 9;
+      }
+    }
+  }
+  
+  public void keyPressed(KeyEvent e) {
+    char c = e.getKeyChar();
+	
+    if (timer.isRunning()) {
+      switch (c) {
+        case 'w': userY--; break;
+        case 'a': userX--; break;
+        case 's': userY++; break;
+        case 'd': userX++; break;
+      }
+    }
+    
+    if (userX < 0) userX = 9;
+    else if (userX > 9) userX = 0;
+    
+    if (userY < 0) userY = 9;
+    else if (userY > 9) userY = 0;
+      
+    repaint();
+  }
+  public void keyReleased(KeyEvent e) {}
+  public void keyTyped(KeyEvent e) {}
+
+}

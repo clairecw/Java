@@ -1,0 +1,105 @@
+//a game
+monsternum: 5
+itemnum: 4
+monsterspeed: 250 
+up: 1
+left: 2
+down: 3
+right: 4
+usersprite: 27 
+monstersprite: 14 
+itemsprite: 6 
+iscollectable: false
+winstring: ayy lmao
+losestring: ur dumb
+
+//attack on pikachu
+monsternum: 6
+itemnum: 5
+monsterspeed: 750 
+up: e
+left: s
+down: d
+right: f
+usersprite: 28 
+monstersprite: 33 
+itemsprite: 6 
+iscollectable: true
+winstring: pika pi
+losestring: pika pi
+
+//game name
+monsternum: 3
+itemnum: 3
+monsterspeed: 750 
+up: w
+left: a
+down: s
+right: d
+usersprite: 0 
+monstersprite: 4 
+itemsprite: 7 
+iscollectable: true
+winstring: YOU WIN!
+losestring: YOU LOSE!
+
+//sketchy luigi game
+monsternum: 5
+itemnum: 2
+monsterspeed: 1000 
+up: w
+left: a
+down: s
+right: d
+usersprite: 10 
+monstersprite: 13 
+itemsprite: 16 
+iscollectable: true
+winstring: mamma mia :)
+losestring: mamma mia :(
+
+//sketch luigi 2
+monsternum: 3
+itemnum: 2
+monsterspeed: 1000 
+up: w
+left: a
+down: s
+right: d
+usersprite: 10 
+monstersprite: 13 
+itemsprite: 16 
+iscollectable: true
+winstring: YOU WIN!
+losestring: YOU LOSE!
+
+//mujjer
+monsternum: 3
+itemnum: 3
+monsterspeed: 750 
+up: w
+left: a
+down: s
+right: d
+usersprite: 19 
+monstersprite: 20 
+itemsprite: 22 
+iscollectable: true
+winstring: hi melody
+losestring: how dare u
+
+//the game
+monsternum: 6
+itemnum: 6
+monsterspeed: 750 
+up: i
+left: j
+down: k
+right: l
+usersprite: 28 
+monstersprite: 2 
+itemsprite: 21 
+iscollectable: t.setrue
+winstring: yey
+losestring: no
+
