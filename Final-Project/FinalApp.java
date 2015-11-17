@@ -12,15 +12,15 @@ import javax.swing.event.*;
 import java.io.*;
 import javax.imageio.*;
 import java.util.Scanner;
+import java.applet.*;
 
-public class FinalApp {
+public class FinalApp extends Applet  {
 	JFrame frame;							// main frame containing all components.
 	MenuPanel panel;
 	
 	public void init() {
 		FinalApp fin = new FinalApp();
 		fin.run();
-		addKeyListener(this);
 	}
 	public void run() {
 		frame = new JFrame("Keys and Timers");
