@@ -31,7 +31,10 @@ public class Seurat extends JPanel implements ChangeListener, MouseListener {
 		images = new ArrayList<BufferedImage>();
 		
 		try {
+		//	images.add(ImageIO.read(new File("green.jpg")));
+		//	images.add(ImageIO.read(new File("beluga.jpg")));
 			images.add(ImageIO.read(new File("beach.jpg")));
+		//	images.add(ImageIO.read(new File("abarca.jpg")));
 			images.add(ImageIO.read(new File("pikachu.jpg")));
 			images.add(ImageIO.read(new File("bulbasaur.jpg")));
 			images.add(ImageIO.read(new File("mario.jpg")));
@@ -76,7 +79,28 @@ public class Seurat extends JPanel implements ChangeListener, MouseListener {
 				repaint();
 			}
 		});
-		
+		/*
+		JButton pause = new JButton("pause");
+		pause.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				pause = true;
+				String fn = FCT.pickImageFile();
+				if (fn != "") {
+					try {
+						
+						images.add(ImageIO.read(new File(fn)));
+						picnum = images.size() - 1;
+						dots.clear();
+					} catch (FileNotFoundException f2) {
+						System.out.println("Could not find picture.");
+					} catch (IOException e2) {
+						System.out.println("Error - IOException.");
+					}
+				}
+				pause = false;
+				repaint();
+			}
+		});*/
 		
 		JPanel right = new JPanel();
 		right.add(new JLabel("Splotch size"));
